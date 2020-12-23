@@ -25,7 +25,7 @@ namespace DAO
             {
                 NhanVien_DTO nhanVien = new NhanVien_DTO();
 
-                nhanVien.MaNhanVien = dt.Rows[i]["Mã NV"].ToString();
+                nhanVien.MaNhanVien = dt.Rows[i]["MaNV"].ToString();
                 nhanVien.TenNhanVien = dt.Rows[i]["Họ và tên"].ToString();
                 nhanVien.NgaySinh = dt.Rows[i]["Ngày sinh"].ToString();
                 nhanVien.GioiTinh = dt.Rows[i]["Giới tính"].ToString();
@@ -44,7 +44,7 @@ namespace DAO
         public static bool ThemNhanVien(NhanVien_DTO nhanVien)
         {
             // chuỗi truy vấn thêm 1 món ăn vào bảng Món Ăn
-            string QueryString = $" INSERT INTO NhanVien ([Địa chỉ],[Lương],[Chức vụ],[Số điện thoại],[Giới tính],[Ngày sinh],[Họ và tên],[Mã NV]) "
+            string QueryString = $" INSERT INTO NhanVien ([Địa chỉ],[Lương],[Chức vụ],[Số điện thoại],[Giới tính],[Ngày sinh],[Họ và tên],MaNV) "
                 + $"VALUES('{nhanVien.DiaChi}','{nhanVien.Luong}','{nhanVien.ChucVu}','{nhanVien.SoDienThoai}','{nhanVien.GioiTinh}','{nhanVien.NgaySinh}','{nhanVien.TenNhanVien}','{nhanVien.MaNhanVien}'); ";
             conn = DataProvider.OpenConnection();
             try
@@ -63,7 +63,7 @@ namespace DAO
         public static bool SuaNhanVien(NhanVien_DTO nhanVien)
         {
             // chuỗi truy vấn sửa món ăn
-            string QueryString = string.Format("UPDATE NhanVien set [Họ và tên]='{0}', [Ngày sinh]='{1}', [Giới tính]='{2}', [Số điện thoại]='{3}', [Chức vụ]='{4}', [Lương]='{5}', [Địa chỉ]='{6}' where [Mã NV]='{7}'", nhanVien.TenNhanVien, nhanVien.NgaySinh, nhanVien.GioiTinh, nhanVien.SoDienThoai, nhanVien.ChucVu, nhanVien.Luong, nhanVien.DiaChi, nhanVien.MaNhanVien);
+            string QueryString = string.Format("UPDATE NhanVien set [Họ và tên]='{0}', [Ngày sinh]='{1}', [Giới tính]='{2}', [Số điện thoại]='{3}', [Chức vụ]='{4}', [Lương]='{5}', [Địa chỉ]='{6}' where MaNV='{7}'", nhanVien.TenNhanVien, nhanVien.NgaySinh, nhanVien.GioiTinh, nhanVien.SoDienThoai, nhanVien.ChucVu, nhanVien.Luong, nhanVien.DiaChi, nhanVien.MaNhanVien);
             conn = DataProvider.OpenConnection();
             try
             {
@@ -82,7 +82,7 @@ namespace DAO
         public static bool XoaNhanVien(NhanVien_DTO nhanVien)
         {
             // chuỗi truy vấn nhân viên
-            string QueryString = string.Format("DELETE FROM NhanVien where [Mã NV] ='{0}'", nhanVien.MaNhanVien);
+            string QueryString = string.Format("DELETE FROM NhanVien where MaNV ='{0}'", nhanVien.MaNhanVien);
             conn = DataProvider.OpenConnection();
             try
             {
@@ -111,7 +111,7 @@ namespace DAO
             {
                 NhanVien_DTO nhanVien = new NhanVien_DTO();
 
-                nhanVien.MaNhanVien = dt.Rows[i]["Mã NV"].ToString();
+                nhanVien.MaNhanVien = dt.Rows[i]["MaNV"].ToString();
                 nhanVien.TenNhanVien = dt.Rows[i]["Họ và tên"].ToString();
                 nhanVien.NgaySinh = dt.Rows[i]["Ngày sinh"].ToString();
                 nhanVien.GioiTinh = dt.Rows[i]["Giới tính"].ToString();

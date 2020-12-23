@@ -39,7 +39,7 @@ namespace RestaurantManagerment
             {
                 foreach (NhanVien_DTO nv in danhSachNhanVien)
                 {
-                    ID.Add(int.Parse(nv.MaNhanVien));
+                    ID.Add(int.Parse(nv.MaNhanVien.Substring(2)));
                 }
             }
             gunaDataGridView1.DataSource = danhSachNhanVien;

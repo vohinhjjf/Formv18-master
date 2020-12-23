@@ -28,7 +28,7 @@ namespace RestaurantManagerment
         List<TaiKhoan_DTO> dstaikhoan = new List<TaiKhoan_DTO>();
         private void btnThemTK_Click(object sender, EventArgs e)
         {
-            /*if (txtTenTaiKhoan.Text == "" || txtMatKhau.Text == "" || cbLoaiTaiKhoan.Text == "" || cbMaNhanVien.Text=="" )
+            if (txtTenTaiKhoan.Text == "" || txtMatKhau.Text == "" || cbLoaiTaiKhoan.Text == "" || cbMaNhanVien.Text=="" )
             {
                 MessageBox.Show("Vui Lòng Nhập Đầy Đủ Thông Tin ...");
                 return;
@@ -51,7 +51,7 @@ namespace RestaurantManagerment
                         return;
                     }
                 }
-            }*/
+            }
 
         }
         
@@ -64,8 +64,27 @@ namespace RestaurantManagerment
        
         private void Tab3_2QuanLiTaiKhoan_Load(object sender, EventArgs e)
         {
-            
-            
+            SQLiteConnection conn = DataProvider.OpenConnection();
+            try
+            {
+                cbMaNhanVien.Items.Clear();
+
+                string query = "Select MaNV From NhanVien";
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.CommandText = query;
+
+
+                SQLiteDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cbMaNhanVien.Items.Add(dr["MaNV"].ToString());
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi khi lấy dữ liệu sql !");
+            }
+
         }
     }
 }
