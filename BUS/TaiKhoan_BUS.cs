@@ -14,5 +14,17 @@ namespace BUS
         {
             return TaiKhoan_DAO.LoadTaiKhoan();
         }
+        public static bool ThemTaiKhoan(TaiKhoan_DTO taikhoan)
+        {
+            return TaiKhoan_DAO.ThemTaiKhoan(taikhoan);
+        }
+        public static bool SuaTaiKhoan(TaiKhoan_DTO taikhoan)
+        {
+            return TaiKhoan_DAO.SuaTaiKhoan(taikhoan);
+        }
+        public static bool XoaTaiKhoan(TaiKhoan_DTO taikhoan)
+        {
+            return TaiKhoan_DAO.XoaTaiKhoan(taikhoan);
+        }
     }
 }

@@ -85,6 +85,7 @@
             this.dtpDenNgay.Name = "dtpDenNgay";
             this.dtpDenNgay.Size = new System.Drawing.Size(123, 24);
             this.dtpDenNgay.TabIndex = 12;
+            this.dtpDenNgay.ValueChanged += new System.EventHandler(this.dtpDenNgay_ValueChanged);
             // 
             // dtpTuNgay
             // 
@@ -96,21 +97,27 @@
             this.dtpTuNgay.Name = "dtpTuNgay";
             this.dtpTuNgay.Size = new System.Drawing.Size(123, 24);
             this.dtpTuNgay.TabIndex = 11;
+            this.dtpTuNgay.ValueChanged += new System.EventHandler(this.dtpTuNgay_ValueChanged);
             // 
             // dgvDanhSachHoaDon
             // 
-            this.dgvDanhSachHoaDon.AllowUserToResizeColumns = false;
             this.dgvDanhSachHoaDon.AllowUserToResizeRows = false;
             this.dgvDanhSachHoaDon.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDanhSachHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhSachHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvDanhSachHoaDon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvDanhSachHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDanhSachHoaDon.Location = new System.Drawing.Point(35, 114);
             this.dgvDanhSachHoaDon.Name = "dgvDanhSachHoaDon";
             this.dgvDanhSachHoaDon.ReadOnly = true;
+            this.dgvDanhSachHoaDon.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvDanhSachHoaDon.RowHeadersVisible = false;
             this.dgvDanhSachHoaDon.RowHeadersWidth = 51;
             this.dgvDanhSachHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDanhSachHoaDon.Size = new System.Drawing.Size(662, 454);
             this.dgvDanhSachHoaDon.TabIndex = 10;
             this.dgvDanhSachHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoaDon_CellContentClick);
+            this.dgvDanhSachHoaDon.SelectionChanged += new System.EventHandler(this.dgvDanhSachHoaDon_SelectionChanged);
+            this.dgvDanhSachHoaDon.Click += new System.EventHandler(this.dgvDanhSachHoaDon_Click);
             // 
             // btnXoaTatCa
             // 
@@ -133,6 +140,7 @@
             this.btnXoa.Size = new System.Drawing.Size(81, 74);
             this.btnXoa.TabIndex = 16;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnHienThiTatCa
             // 
@@ -144,6 +152,7 @@
             this.btnHienThiTatCa.Size = new System.Drawing.Size(81, 74);
             this.btnHienThiTatCa.TabIndex = 17;
             this.btnHienThiTatCa.UseVisualStyleBackColor = false;
+            this.btnHienThiTatCa.Click += new System.EventHandler(this.btnHienThiTatCa_Click);
             // 
             // btnLoc
             // 

@@ -50,9 +50,11 @@
   <ItemGroup>
     <Compile Include="BanAn_DAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DSphieunhap_DAO.cs" />
     <Compile Include="HoaDonOrder_DAO.cs" />
     <Compile Include="HoaDon_DAO.cs" />
     <Compile Include="MonAn_DAO.cs" />
+    <Compile Include="NguyenLieu_DAO.cs" />
     <Compile Include="NhanVien_DAO.cs" />
     <Compile Include="NhomMonAn_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

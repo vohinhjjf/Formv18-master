@@ -14,5 +14,13 @@ namespace BUS
         {
             return HoaDon_DAO.DsHoaDon();
         }
+        public static List<HoaDon_DTO> LocDSHoaDon(DateTime checkin, DateTime checkout)
+        {
+            return HoaDon_DAO.LocDsHoaDon(checkin,checkout);
+        }
+        public static bool XoaHoaDon(int ID)
+        {
+            return HoaDon_DAO.XoaHoaDon(ID);
+        }
     }
 }

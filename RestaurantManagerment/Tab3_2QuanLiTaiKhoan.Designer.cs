@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dtgrvDanhSachBan = new Guna.UI.WinForms.GunaDataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dtgrvDanhTaiKhoan = new Guna.UI.WinForms.GunaDataGridView();
             this.btnXoaTK = new System.Windows.Forms.Button();
             this.btnSuaTK = new System.Windows.Forms.Button();
             this.btnThemTK = new System.Windows.Forms.Button();
@@ -44,72 +44,73 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTenTaiKhoan = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrvDanhSachBan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrvDanhTaiKhoan)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgrvDanhSachBan
+            // dtgrvDanhTaiKhoan
             // 
-            this.dtgrvDanhSachBan.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgrvDanhSachBan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgrvDanhSachBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgrvDanhSachBan.BackgroundColor = System.Drawing.Color.White;
-            this.dtgrvDanhSachBan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgrvDanhSachBan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgrvDanhSachBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgrvDanhSachBan.ColumnHeadersHeight = 30;
-            this.dtgrvDanhSachBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgrvDanhSachBan.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgrvDanhSachBan.EnableHeadersVisualStyles = false;
-            this.dtgrvDanhSachBan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgrvDanhSachBan.Location = new System.Drawing.Point(51, 310);
-            this.dtgrvDanhSachBan.Margin = new System.Windows.Forms.Padding(2);
-            this.dtgrvDanhSachBan.Name = "dtgrvDanhSachBan";
-            this.dtgrvDanhSachBan.ReadOnly = true;
-            this.dtgrvDanhSachBan.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgrvDanhSachBan.RowHeadersVisible = false;
-            this.dtgrvDanhSachBan.RowHeadersWidth = 51;
-            this.dtgrvDanhSachBan.RowTemplate.Height = 24;
-            this.dtgrvDanhSachBan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgrvDanhSachBan.Size = new System.Drawing.Size(469, 271);
-            this.dtgrvDanhSachBan.TabIndex = 63;
-            this.dtgrvDanhSachBan.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.dtgrvDanhSachBan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgrvDanhSachBan.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgrvDanhSachBan.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgrvDanhSachBan.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgrvDanhSachBan.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgrvDanhSachBan.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgrvDanhSachBan.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgrvDanhSachBan.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgrvDanhSachBan.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgrvDanhSachBan.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgrvDanhSachBan.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgrvDanhSachBan.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgrvDanhSachBan.ThemeStyle.HeaderStyle.Height = 30;
-            this.dtgrvDanhSachBan.ThemeStyle.ReadOnly = true;
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgrvDanhSachBan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.DimGray;
+            this.dtgrvDanhTaiKhoan.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgrvDanhTaiKhoan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgrvDanhTaiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgrvDanhTaiKhoan.BackgroundColor = System.Drawing.Color.White;
+            this.dtgrvDanhTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgrvDanhTaiKhoan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrvDanhTaiKhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgrvDanhTaiKhoan.ColumnHeadersHeight = 30;
+            this.dtgrvDanhTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgrvDanhTaiKhoan.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgrvDanhTaiKhoan.EnableHeadersVisualStyles = false;
+            this.dtgrvDanhTaiKhoan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgrvDanhTaiKhoan.Location = new System.Drawing.Point(51, 310);
+            this.dtgrvDanhTaiKhoan.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgrvDanhTaiKhoan.Name = "dtgrvDanhTaiKhoan";
+            this.dtgrvDanhTaiKhoan.ReadOnly = true;
+            this.dtgrvDanhTaiKhoan.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgrvDanhTaiKhoan.RowHeadersVisible = false;
+            this.dtgrvDanhTaiKhoan.RowHeadersWidth = 51;
+            this.dtgrvDanhTaiKhoan.RowTemplate.Height = 24;
+            this.dtgrvDanhTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgrvDanhTaiKhoan.Size = new System.Drawing.Size(469, 271);
+            this.dtgrvDanhTaiKhoan.TabIndex = 63;
+            this.dtgrvDanhTaiKhoan.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgrvDanhTaiKhoan.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgrvDanhTaiKhoan.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgrvDanhTaiKhoan.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.HeaderStyle.Height = 30;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.ReadOnly = true;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgrvDanhTaiKhoan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.DimGray;
+            this.dtgrvDanhTaiKhoan.Click += new System.EventHandler(this.dtgrvDanhTaiKhoan_Click);
             // 
             // btnXoaTK
             // 
@@ -121,6 +122,7 @@
             this.btnXoaTK.TabIndex = 60;
             this.btnXoaTK.Text = "Xóa";
             this.btnXoaTK.UseVisualStyleBackColor = false;
+            this.btnXoaTK.Click += new System.EventHandler(this.btnXoaTK_Click);
             // 
             // btnSuaTK
             // 
@@ -132,6 +134,7 @@
             this.btnSuaTK.TabIndex = 59;
             this.btnSuaTK.Text = "Sửa";
             this.btnSuaTK.UseVisualStyleBackColor = false;
+            this.btnSuaTK.Click += new System.EventHandler(this.btnSuaTK_Click);
             // 
             // btnThemTK
             // 
@@ -192,9 +195,6 @@
             this.cbLoaiTaiKhoan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaiTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 14.25F);
             this.cbLoaiTaiKhoan.FormattingEnabled = true;
-            this.cbLoaiTaiKhoan.Items.AddRange(new object[] {
-            "Admin",
-            "Staff"});
             this.cbLoaiTaiKhoan.Location = new System.Drawing.Point(199, 138);
             this.cbLoaiTaiKhoan.Name = "cbLoaiTaiKhoan";
             this.cbLoaiTaiKhoan.Size = new System.Drawing.Size(143, 29);
@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.Controls.Add(this.dtgrvDanhSachBan);
+            this.Controls.Add(this.dtgrvDanhTaiKhoan);
             this.Controls.Add(this.btnXoaTK);
             this.Controls.Add(this.btnSuaTK);
             this.Controls.Add(this.btnThemTK);
@@ -265,7 +265,7 @@
             this.Name = "Tab3_2QuanLiTaiKhoan";
             this.Size = new System.Drawing.Size(818, 653);
             this.Load += new System.EventHandler(this.Tab3_2QuanLiTaiKhoan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrvDanhSachBan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrvDanhTaiKhoan)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -274,7 +274,7 @@
 
         #endregion
 
-        private Guna.UI.WinForms.GunaDataGridView dtgrvDanhSachBan;
+        private Guna.UI.WinForms.GunaDataGridView dtgrvDanhTaiKhoan;
         private System.Windows.Forms.Button btnXoaTK;
         private System.Windows.Forms.Button btnSuaTK;
         private System.Windows.Forms.Button btnThemTK;

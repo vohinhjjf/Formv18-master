@@ -199,7 +199,7 @@ namespace RestaurantManagerment
 
                 // update số tiền
                 DateTime time = DateTime.Now;
-                string ngayThanhToan = time.ToString("yyyy/MM/dd");
+                string ngayThanhToan = time.ToString("dd/MM/yyyy");
                 try
                 {
                     HoaDonOrder_BUS.UpdateHoaDon(1, ngayThanhToan, int.Parse(lbThanhTien.Text), danhSachBanAn[indexTable].ID);

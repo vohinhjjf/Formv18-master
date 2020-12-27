@@ -46,8 +46,10 @@
     <Compile Include="HoaDonOrder_DTO.cs" />
     <Compile Include="HoaDon_DTO.cs" />
     <Compile Include="MonAn_DTO.cs" />
+    <Compile Include="NguyenLieu_DTO.cs" />
     <Compile Include="NhanVien_DTO.cs" />
     <Compile Include="NhomMonAn_DTO.cs" />
+    <Compile Include="PhieuNhap_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoan_DTO.cs" />
   </ItemGroup>
